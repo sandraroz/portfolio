@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
 const Home = () => import('@/views/Home.vue');
-const About = () => import(/* webpackChunkName: "about" */ '../views/About.vue');
-const Resume = () => import(/* webpackChunkName: "about" */ '../views/About.vue');
+const About = () => import('@/views/About.vue');
+const Resume = () => import(/* webpackChunkName: "about" */ '../views/Resume.vue');
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -25,7 +25,7 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  linkExactActiveClass: 'text-pink-500',
+  linkExactActiveClass: 'text-pink-500 border-b-4 border-pink-500',
 });
 
 export default router;

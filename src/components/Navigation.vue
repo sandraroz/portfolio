@@ -2,23 +2,23 @@
   <!-- <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> -->
   <nav class="">
-    <div class="max-w-1xl mx-auto px-4">
-      <div class="flex justify-between">
-        <div class="flex space-x-4 items-center">
-          <!-- Website Logo -->
-          <div>
-            <a href="#" class="flex flex-row items-center py-4 px-2">
-              <img src="logo.png" alt="Logo" class="h-20 w-20 mr-2" />
-            </a>
-          </div>
+    <div class="max-w-1xl mx-auto">
+      <div class="flex justify-between text-2xl">
+        <div class="flex space-x-6 items-center">
           <!-- Primary Navbar items -->
-          <router-link :to="{ name: 'Home' }" class="py-4 px-2 text-black-500 font-bold"
+          <router-link
+            :to="{ name: 'Home' }"
+            class="py-4 px-2 text-black-500 font-bold text-left border-b-4 border-transparent"
             >Home</router-link
           >
-          <router-link :to="{ name: 'About' }" class="py-4 px-2 text-black-500 font-bold"
+          <router-link
+            :to="{ name: 'About' }"
+            class="py-4 px-2 text-black-500 font-bold border-b-4 border-transparent"
             >About</router-link
           >
-          <router-link :to="{ name: 'Resume' }" class="py-4 px-2 text-black-500 font-bold"
+          <router-link
+            :to="{ name: 'Resume' }"
+            class="py-4 px-2 text-black-500 font-bold border-b-4 border-transparent"
             >Resume</router-link
           >
         </div>
