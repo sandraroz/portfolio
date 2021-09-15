@@ -1,7 +1,6 @@
 <template>
-  <!-- Background Animation -->
-  <particles id="tsparticles" :options="particlesOptions" />
-
+  <!-- Background Container -->
+  <app-background />
   <!-- Main container -->
   <div id="main">
     <app-navigation />
@@ -18,13 +17,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import AppNavigation from '@/components/Navigation.vue';
-import { particlesOptions } from '@/assets/particlesOptions';
+import AppBackground from '@/components/Background.vue';
 
 export default defineComponent({
-  components: { AppNavigation },
-  data() {
-    return { particlesOptions };
-  },
+  components: { AppNavigation, AppBackground },
 });
 </script>
 
