@@ -26,7 +26,7 @@ enableIndexedDbPersistence(db).catch((err) => {
 });
 
 const programmingSkills = collection(db, 'programming');
-const techSkill = collection(db, 'tech');
-const miscSkill = collection(db, 'misc');
+const techSkills = collection(db, 'tech');
+const miscSkills = collection(db, 'misc');
 
-export { programmingSkills, techSkill, miscSkill };
+export { programmingSkills, techSkills, miscSkills };
